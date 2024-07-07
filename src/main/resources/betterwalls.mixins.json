@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "lemonnik.betterwalls.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ExampleMixin",
+    "FenceBlockMixin",
+    "WallBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

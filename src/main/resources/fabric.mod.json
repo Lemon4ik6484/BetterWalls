@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "betterwalls",
+	"version": "${version}",
+	"name": "BetterWalls",
+	"description": "Connects Fences and Walls!",
+	"authors": [
+		"Lemonnik6484"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/betterwalls",
+		"sources": "https://github.com/Lemon4ik6484/BetterWalls"
+	},
+	"license": "MIT",
+	"icon": "assets/betterwalls/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lemonnik.betterwalls.BetterWalls"
+		],
+		"fabric-datagen": [
+			"lemonnik.betterwalls.BetterWallsDataGenerator"
+		]
+	},
+	"mixins": [
+		"betterwalls.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
