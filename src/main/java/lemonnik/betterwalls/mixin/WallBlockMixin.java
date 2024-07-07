@@ -12,10 +12,10 @@ import org.spongepowered.asm.mixin.injection.At;
 public class WallBlockMixin {
     @ModifyReturnValue(method = "shouldConnectTo", at = @At("RETURN"))
     private boolean doConnectFences(boolean original, @Local BlockState state) {
-        if (original) {
+        if (!original) {
             return state.isIn(BlockTags.FENCES);
         }
 
-        return false;
+        return true;
     }
 }
