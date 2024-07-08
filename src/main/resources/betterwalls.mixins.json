@@ -4,7 +4,8 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "FenceBlockMixin",
-    "WallBlockMixin"
+    "WallBlockMixin",
+    "PaneBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
