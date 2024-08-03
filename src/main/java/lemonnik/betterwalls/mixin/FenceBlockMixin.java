@@ -18,6 +18,7 @@ public class FenceBlockMixin {
         Block block = state.getBlock();
         return original ? true : state.isIn(BlockTags.WALLS)
                 || state.isIn(BlockTags.FENCES)
-                || block instanceof PaneBlock;
+                || block instanceof PaneBlock
+                || state.isIn(BlockTags.WALL_SIGNS);
     }
 }

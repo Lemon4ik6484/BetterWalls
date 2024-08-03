@@ -26,6 +26,9 @@ public abstract class WallBlockMixin {
             if (state.isIn(BlockTags.FENCES)) {
                 beTall = true;
                 return true;
+            } else if (state.isIn(BlockTags.WALL_SIGNS)) {
+                beTall = false;
+                return true;
             }
         }
         return original;
