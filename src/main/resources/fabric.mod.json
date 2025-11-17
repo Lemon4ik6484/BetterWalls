@@ -13,15 +13,12 @@
 		"sources": "https://github.com/Lemon4ik6484/BetterWalls",
 		"issues": "https://github.com/Lemon4ik6484/BetterWalls/issues"
 	},
-	"license": "AGPL-3.0",
+	"license": "ARR",
 	"icon": "/assets/betterwalls/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"lemonnik.betterwalls.BetterWalls"
-		],
-		"fabric-datagen": [
-			"lemonnik.betterwalls.BetterWallsDataGenerator"
 		]
 	},
 	"mixins": [

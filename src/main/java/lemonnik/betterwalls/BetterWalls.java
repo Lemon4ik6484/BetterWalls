@@ -11,6 +11,6 @@ public class BetterWalls implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Fixing block connections!");
+		LOGGER.info("Bettering the Walls!");
 	}
 }
