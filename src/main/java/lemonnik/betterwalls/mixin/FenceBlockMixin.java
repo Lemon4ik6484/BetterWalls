@@ -16,7 +16,8 @@ public class FenceBlockMixin {
     @ModifyReturnValue(method = "canConnect", at = @At("RETURN"))
     private boolean doConnectFences(boolean original, @Local BlockState state) {
         Block block = state.getBlock();
-        return original ? true : state.isIn(BlockTags.WALLS)
+        return original
+                || state.isIn(BlockTags.WALLS)
                 || state.isIn(BlockTags.FENCES)
                 || block instanceof PaneBlock
                 || state.isIn(BlockTags.WALL_SIGNS);
