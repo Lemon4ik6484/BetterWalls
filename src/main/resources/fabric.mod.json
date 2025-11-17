@@ -19,9 +19,6 @@
 	"entrypoints": {
 		"main": [
 			"lemonnik.betterwalls.BetterWalls"
-		],
-		"fabric-datagen": [
-			"lemonnik.betterwalls.BetterWallsDataGenerator"
 		]
 	},
 	"mixins": [
