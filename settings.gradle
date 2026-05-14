@@ -13,14 +13,13 @@ pluginManagement {
 }
 
 plugins {
-	id "dev.kikugie.stonecutter" version "0.4.6"
+	id("dev.kikugie.stonecutter") version "0.9.4"
 }
 
 stonecutter {
-	shared {
-		versions "1.20", "1.20.1", "1.21", "1.21.3"
+	create(rootProject) {
+		kotlinController = false
+		versions("1.20.1", "1.21.1", "1.21.4", "1.21.11", "26.1.2")
 		vcsVersion = "1.20.1"
 	}
-
-	create rootProject
 }
