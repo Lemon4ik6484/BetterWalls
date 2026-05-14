@@ -24,7 +24,7 @@ public abstract class WallBlockMixin {
     //? if >=26.1 {
     /*@ModifyReturnValue(method = "connectsTo", at = @At("RETURN"))
     *///?} else {
-    @ModifyReturnValue(method = "canConnect", at = @At("RETURN"))
+    @ModifyReturnValue(method = "shouldConnectTo", at = @At("RETURN"))
      //?}
     private boolean doConnectFences(boolean original, @Local BlockState state) {
         if (!original) {
